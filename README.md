@@ -1,6 +1,6 @@
 # TerminallySimple
 
-This is a simple multi-terminal application. Unlike [_terminator_](https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)) or [_tmux_](https://github.com/tmux/tmux/wiki) this application is __not__ meant to be modular. It displays only six terminals in in two rows. The app was tested only on Ubuntu 16.04.
+This is a simple multi-terminal application. Unlike [_terminator_](https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)) or [_tmux_](https://github.com/tmux/tmux/wiki) this application is __not__ meant to be modular. It displays six terminals in two rows. The app was tested on Ubuntu 16.04.
 
 ## TODO:
 
