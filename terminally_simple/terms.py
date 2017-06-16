@@ -33,6 +33,7 @@ class TerminalWindow(Gtk.Window):
 		
 		self.add(self.grid)
 		#self.maximize()
+		#self.set_border_width(2) -> ugly
 		
 		terminal = self.construct_terminals()
 		self.spawn_sync_for_each_terminal(terminal)

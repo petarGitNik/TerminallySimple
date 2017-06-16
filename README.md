@@ -9,6 +9,8 @@ This is a simple multi-terminal application. Unlike [_terminator_](https://en.wi
 * Add option for one additional row (_maybe_)
 * Add a proper pythonic packaging (research PyPI and PyPUG)
 * When _exit_ is executed destroy and re-spawn the current terminal
+* Add icon
+* Make app installable
 
 ## Additional info
 
