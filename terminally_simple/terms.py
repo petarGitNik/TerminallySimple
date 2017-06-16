@@ -23,29 +23,29 @@ class TerminalWindow(Gtk.Window):
 		Gtk.Window.__init__(self, title='Terminally Simple')
 		
 		# Initiate grid, set rows and columns to fill the whole window
-		grid = Gtk.Grid()
+		self.grid = Gtk.Grid()
 		
-		grid.set_column_homogeneous(homogeneous=True)
-		grid.set_row_homogeneous(homogeneous=True)
+		self.grid.set_column_homogeneous(homogeneous=True)
+		self.grid.set_row_homogeneous(homogeneous=True)
 		
-		grid.set_column_spacing(spacing=2)
-		grid.set_row_spacing(spacing=2)
+		self.grid.set_column_spacing(spacing=2)
+		self.grid.set_row_spacing(spacing=2)
 		
-		self.add(grid)
+		self.add(self.grid)
 		#self.maximize()
 		
 		terminal = self.construct_terminals()
 		self.spawn_sync_for_each_terminal(terminal)
 
 		# First row
-		grid.attach(terminal[0], 0, 0, 1, 1)
-		grid.attach(terminal[1], 1, 0, 1, 1)
-		grid.attach(terminal[2], 2, 0, 1, 1)
+		self.grid.attach(terminal[0], 0, 0, 1, 1)
+		self.grid.attach(terminal[1], 1, 0, 1, 1)
+		self.grid.attach(terminal[2], 2, 0, 1, 1)
 
 		# Second row
-		grid.attach(terminal[3], 0, 1, 1, 1)
-		grid.attach(terminal[4], 1, 1, 1, 1)
-		grid.attach(terminal[5], 2, 1, 1, 1)
+		self.grid.attach(terminal[3], 0, 1, 1, 1)
+		self.grid.attach(terminal[4], 1, 1, 1, 1)
+		self.grid.attach(terminal[5], 2, 1, 1, 1)
 		
 	def construct_terminals(self):
 		"""
