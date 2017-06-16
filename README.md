@@ -14,4 +14,4 @@ This is a simple multi-terminal application. Unlike [_terminator_](https://en.wi
 
 App was built using Gtk and Python. For detailed information look at _requirements.txt_ file.
 
-![TerminallySimple screenshot.]()
+![TerminallySimple screenshot.](example.png)
